@@ -168,6 +168,27 @@
                     </execution>
                 </executions>
             </plugin>
+           <plugin>
+               <groupId>com.excelsiorjet</groupId>
+               <artifactId>excelsior-jet-maven-plugin</artifactId>
+               <version>1.1.0</version>
+               <configuration>
+                   <mainClass>com.lynden.gmapsfx.MainApp</mainClass>
+<!--
+                   <packaging>native-bundle</packaging>
+                   <excelsiorInstaller>
+                       <compressionLevel>high</compressionLevel>
+                       <shortcuts>
+                           <shortcut>
+                               <location>start-menu</location>
+                               <target>/GmapsFX.exe</target>
+                               <name>GMapsFX</name>
+                           </shortcut>
+                       </shortcuts>
+                   </excelsiorInstaller>
+-->
+               </configuration>
+           </plugin>
         </plugins>
     </build>
     <dependencies>
